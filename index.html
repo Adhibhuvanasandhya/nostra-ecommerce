@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!--link stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--tailwind link--->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+    " rel="stylesheet">
+</head>
+
+<body>
+    <!--disount-->
+    <div class="discount ">
+        <p>Sign Up and <b>GET 20% OFF</b> for your first order <i class="fa-solid fa-xmark" id="close"
+                style="cursor: pointer;margin-left: 10px;"></i></p>
+
+    </div>
+
+    <!--navbar-->
+    <div class="navbar p-5 flex items-center justify-between shadow-xl sticky top-0 z-10 bg-white">
+        <h1 class="font-extrabold text-3xl">Nostra</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6  md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+
+
+        <div class="navbar__s2 gap-5 cursor-pointer hidden md:flex">
+            <p class="hover:underline"><a href="./index.html">Home</a></p>
+            <p class="hover:underline"><a href="#newarrivals">New Arrival</a> </p>
+            <p class="hover:underline"><a href="#most-wanted">Most Wanted</a> </p>
+            <p class="hover:underline"><a href="collection.html">Collections</a> </p>
+            <p class="hover:underline"><a href="./contact.html"> Contact Us</a> </p>
+
+
+        </div>
+    </div>
+
+    <!--sidenavbar-->
+    <section id="sidenav" class="bg-white fixed z-20 top-0 transition-all duration-1000"
+        style="width: 35%;height: 100vh;right:-50%;">
+        <div class="text-right p-5">
+            <p id="close-nav" class="inline cursor-pointer text-3xl font-bold"><i class="fa-solid fa-x"></i></p>
+        </div>
+        <div class="gap-10 text-black flex flex-col items-center cursor-pointer">
+            <p class="hover:underline"><a href="./index.html">Home</a></p>
+            <p class="hover:underline"><a href="#newarrivals">New Arrival</a> </p>
+            <p class="hover:underline"><a href="#most-wanted">Most Wanted</a> </p>
+            <p class="hover:underline"><a href="collection.html">Collections</a> </p>
+            <p class="hover:underline"><a href="./contact.html"> Contact Us</a> </p>
+
+        </div>
+
+    </section>
+
+    <!--Slider-->
+    <div class="slider">
+        <div class="slider-left-button">
+            <i id="slider-left-activate" class="fa-solid fa-angle-left" style="color: #ffffff;"></i>
+        </div>
+
+        <div class="slider-content px-4 md:px-0">
+            <h1>Level up your style with our</h1>
+            <h4>Summer Collections</h4>
+            <button class="py-2 px-4 md:py-3 md:px-6 text-sm md:text-lg"> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+
+        <div class="slider-image-container">
+            <img class="slider-image"
+                src="https://png.pngtree.com/thumb_back/fw800/background/20230129/pngtree-elegant-woman-hosts-joyful-party-with-assurance-cute-model-advertisement-photo-image_49625332.jpg"
+                width="100%" alt="">
+            <img class="slider-image"
+                src="https://img.freepik.com/premium-photo/yellow-wall-with-red-white-striped-skirt-shoes-it_1034910-82187.jpg"
+                width="100%" alt="">
+            <img class="slider-image"
+                src="https://png.pngtree.com/thumb_back/fw800/background/20230125/pngtree-excited-woman-in-dress-pointing-at-promo-blue-background-photo-image_49527570.jpg"
+                width="100%" alt="">
+
+
+        </div>
+
+        <div class="slider-right-button">
+
+            <i id="slider-right-activate" class="fa-solid fa-angle-right" style="color: #ffffff;"></i>
+        </div>
+    </div>
+
+    <!--Brands-->
+    <h1 class="text-2xl font-bold mt-5">Brands</h1>
+    <div class="brands ">
+        <div class="logo">
+            <img class="logo_img" src="./images/puma.png">
+            <p>Puma</p>
+        </div>
+
+        <div class="logo">
+            <img class="logo_img" src="./images/adidas.png">
+            <p>Adidas</p>
+        </div>
+
+        <div class="logo">
+            <img class="logo_img" src="./images/behance.png">
+            <p>Behance</p>
+        </div>
+        <div class="logo">
+            <img class="logo_img" src="./images/simple.png">
+            <p>Simple</p>
+        </div>
+        <div class="logo">
+            <img class="logo_img" src="./images/twitch.png">
+            <p>Twitch</p>
+        </div>
+        <div class="logo">
+            <img class="logo_img" src="./images/two-leaves.png">
+            <p>Leaves</p>
+        </div>
+    </div>
+    <!--service-->
+
+
+    <div class="service-container1 mb-5 mr-5 mt-5 flex justify-between items-center">
+        <div class="font-bold text-2xl">
+            <h2>We provide Best</h2>
+            <h2>Customer Experiences</h2>
+        </div>
+
+        <div>
+            <p>|| We ensure that our customer have the best shopping experience</p>
+        </div>
+
+    </div>
+    <div class="service-container2 mt-2 flex  flex-row  justify-around md:flex-row text-center">
+        <div class="border p-2 bg-gray-200 m-3 text-sm md:text-base">
+            <i class="fa-regular fa-circle-check text-3xl md:text-5xl mb-3 md:mb-5 mt-2 md:mt-3"></i>
+            <h3 class="font-bold">Original Products</h3>
+            <p>Lorem ipsum dolor sit amet.?</p>
+        </div>
+        <div class="border p-2 bg-gray-200 m-3 text-sm md:text-base">
+            <i class="fa-regular fa-face-smile text-3xl md:text-5xl mb-3 md:mb-5 mt-2 md:mt-3"></i>
+            <h3 class="font-bold">Satisfaction Guarantee</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="border p-2 bg-gray-200 m-3 text-sm md:text-base">
+            <i class="fa-solid fa-broom text-3xl md:text-5xl mb-3 md:mb-5 mt-2 md:mt-3"></i>
+            <h3 class="font-bold">New Arrival Everyday</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="border p-2 bg-gray-200 m-3 text-sm md:text-base">
+            <i class="fa-solid fa-truck-fast text-3xl md:text-5xl mb-3 md:mb-5 mt-2 md:mt-3"></i>
+            <h3 class="font-bold">Fast & Free Shipping</h3>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+    </div>
+
+    <!--new arrivals-->
+    <div class="arrivals mt-3">
+        <h2 id="newarrivals" class="font-bold text-2xl">New Arrivals</h2>
+    </div>
+
+    <div class="arrivals-container flex justify-around mt-4 md:grid-cols-4 gap-4">
+
+        <div class="newarrivals relative border rounded-3xl inline hover:shadow-xl transform hover:-translate-y-2">
+            <img src="./images/new1.webp">
+            <div class="overlay"></div>
+            <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+
+        <div class="newarrivals relative border rounded-3xl inline hover:shadow-xl transform hover:-translate-y-2">
+            <img src="./images/new2.webp">
+            <div class="overlay"></div>
+            <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+
+        <div class="newarrivals relative border rounded-3xl inline hover:shadow-xl transform hover:-translate-y-2">
+            <img src="./images/new3.webp">
+            <div class="overlay"></div>
+            <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+
+        <div class="newarrivals relative border rounded-3xl inline hover:shadow-xl transform hover:-translate-y-2">
+            <img src="./images/new4.webp">
+            <div class="overlay"></div>
+            <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+    </div>
+
+    <!--mostwanted-->
+
+    <div class="slider-container relative overflow-hidden mt-3">
+        <h2 id="most-wanted"  class="font-bold text-2xl">Most Wanted</h2>
+        <button id="prev" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-red-300   text-white px-1 py-1 z-10">Prev</button>
+        <button id="next" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-red-300 text-white px-1 py-1 z-10">Next</button>
+    
+    <div class="initial-scroll-animate reveal-scroll-animate most-wanted-wrapper flex transition-transform duration-500 mt-3">
+        
+
+        <div  class="most-wanted flex justify-between m-3">
+
+            <div class="most-wanted-container relative p-3">
+                <img style="width: 20vw; height: 20vw;" src="./images/mw1.webp" alt="">
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="./images/blackheart.png" alt="">
+
+            </div>
+
+            <div class="most-wanted-container relative p-3 ">
+                <img style="width: 20vw; height: 20vw" src="./images/wm2.webp" alt="">
+                
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="./images/blackheart.png" alt="">
+            </div>
+
+            <div class="most-wanted-container relative p-3">
+                <img style="width: 20vw; height: 20vw;" src="./images/mw3.webp" alt="">
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="./images/blackheart.png" alt="">
+                
+
+            </div>
+
+            <div class="most-wanted-container relative p-3">
+                <img style="width: 20vw;height: 20vw" src="./images/wm4.webp" alt="">
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="./images/blackheart.png" alt="">
+                
+
+            </div>
+            
+            <div class="most-wanted-container relative p-3">
+                <img style="width: 20vw;height: 20vw" src="./images/wm5.webp" alt="">
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="./images/blackheart.png" alt="">
+
+            </div>
+
+            <div class="most-wanted-container relative p-3">
+                <img style="width: 20vw;height: 20vw" src="./images/mw6.webp" alt="">
+                
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="./images/blackheart.png" alt="">
+            </div>
+
+            <div class="most-wanted-container relative p-3">
+                <img style="width: 20vw;height: 20vw" src="./images/mw7.webp" alt="">
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="./images/blackheart.png" alt="">
+                
+
+            </div>
+
+            <div class="most-wanted-container relative p-3">
+                <img style="width: 20vw;height: 20vw" src="./images/wm8.webp" alt="">
+                <p class="sale-overlay">sale</p>
+                <img class="like-button" src="./images/blackheart.png" alt="">
+                
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <!--offerimg-->
+
+    <div class="initial-scroll-animate reveal-scroll-animate mt-5 p-2">
+
+
+
+        <div class="limited-offer ">
+            <div class="limited-offer-img">
+                <img src="./images/offerimg.webp" alt="">
+            </div>
+            <div class="limited-offer-text">
+                <h2>Limited Offer</h2>
+                <h4>35% OFF on this for the first 30 Customers</h4>
+                <button> Shop Now <i class="fa-solid fa-arrow-right"></i> </button>
+            </div>
+        </div>
+
+
+    </div>
+    <!--newsletter-->
+
+    <div class="news mt-5 text-xl flex flex-col items-center">
+        <h2>Join our News Letter</h2>
+        <p class="text-center">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <div class="mt-5">
+            <input class="search p-3 mb-5">
+        </div>
+        <div>
+            <button> Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+    </div>
+
+    </div>
+    <!--footer-->
+
+    <div class="footer bg-red-300 gap-3 mt-3 p-10">
+        <div class="footer-container flex items-center flex-wrap">
+            <div class="footer-box-1 gap-3 flex flex-col">
+                <h2 class="headingText text-2xl font-bold mt-5">Nostra</h2>
+                <p class="text-2xl mt-3">The Standard chunk of Lorem ipsum
+                    used since the 1500s is reprodused
+                    below for those interest</p>
+                <div class="footer-icon-container mt-3">
+                    <i class="fa-brands fa-instagram mr-10 text-2xl"></i>
+                    <i class="fa-brands fa-twitter mr-10 text-2xl"></i>
+                    <i class="fa-brands fa-facebook mr-10 text-2xl"></i>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <p class="subtitle mt-8 text-2xl">@ 2023 Nostra.com</p>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body::-webkit-scrollbar {
+    width: 0; 
+  }
+.discount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #1E232D;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    transition: 2s;
+}
+
+/*Slider*/
+
+.slider{
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    position: relative;
+    
+    border-radius: 5px;
+
+}
+
+.slider-image-container{
+    display: flex;
+    transition: 2s;
+}
+
+.slider-image{
+    width: 100vw;
+    height: 40vw;
+}
+
+.slider-left-button{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    z-index: 1;
+}
+
+.slider-left-button i{
+    font-size: 10vw;
+    
+}
+.slider-right-button{
+    position: absolute;
+    top: 35%;
+    right: 5%;
+}
+.slider-right-button i{
+    font-size: 10vw;
+}
+.slider-content{
+    position: absolute;
+    color: white;
+    text-align: center;
+     width: 100%;
+     top: 20%;
+}
+.slider-content h1{
+    font-size: 5vw;
+}
+.slider-content button{
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin-top: 10px;
+   color:lightsalmon;
+   border: 2px solid wheat;
+   background-color:white;
+}
+
+/*brands*/
+.brands{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2px;
+
+}
+.logo{
+    align-items: center;
+    width: 70px;
+
+}
+.logo_img{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    width: 70px; 
+    max-width: 100%;
+}
+.newarrivals{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.newarrivals img{
+    border-radius: 4%;
+    width: 250px;
+    height: 250px;
+    padding: 5px;
+}
+.newarrivals button{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 1.2vw;
+    border-radius: 10px;
+    position: absolute;
+    color:lightsalmon;
+   border: 2px solid wheat;
+   background-color:white;
+    top: 50%;
+    left: 18%;
+    z-index: 2;
+ }
+ .overlay{
+    border-radius: 2%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:lightgray;
+    z-index: 2;
+    top: 0;
+    opacity:0.4;
+ }
+ .slider-container {
+    width: 100%; 
+}
+
+.most-wanted-container {
+    width: 20vw; 
+}
+
+
+@media (max-width: 1024px) {
+    .most-wanted-container {
+        width: 25vw; 
+    }
+}
+
+@media (max-width: 640px) {
+    .most-wanted-container {
+        width: 40vw; 
+    }
+}
+
+
+.most-wanted-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+ .most-wanted img{
+    border-radius: 2%;
+    
+     
+ }
+
+ .sale-overlay{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    font-size: 2vw;
+    background-color: red;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10%;
+ }
+ .like-button{
+    position: absolute;
+    width: 50px;
+    bottom: 15px;
+    right: 15px;
+}
+
+    
+.most-wanted::-webkit-scrollbar {
+    appearance: none;
+    
+  }
+   
+   /* Scroll Animate */
+
+ .initial-scroll-animate{
+   
+    transition: 3s;
+ }
+
+ .reveal-scroll-animate{
+    opacity: 0;
+ }
+
+ 
+ 
+.limited-offer{
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    background-color: #C97483;
+    color:white;
+    padding: 20px;
+    font-size:25px;
+}
+
+.limited-offer img{
+    width: 100%;
+    height: 100%;
+}
+
+.limited-offer-text{
+    padding: 10px;
+}
+
+.limited-offer button{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #1D232C;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: white;   
+
+ }
+
+
+.news input{
+    width:80vw;
+    border: solid #1D232C 3px;
+
+}
+
+.news input:focus{
+   outline: none;
+
+}
+
+.news button{
+    
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    background-color:#C97483;
+    border-radius: 10px;
+    border: none;
+    padding:10px
+ }
+.footer{
+    box-sizing: border-box;
+}
+
+.footer-box-2{
+    display: flex;
+}
+.filter-section{
+    flex-basis: 300px;
+}
+.vertical-line {
+    border: none;
+    border-left: 4px solid #1D232C;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 150px;
+}
+@media (max-width: 640px) {
+    .filter-section {
+      width: 100%; /* Make the filter section full width on mobile */
+    }
+  }
+  
+
+
+
+
+

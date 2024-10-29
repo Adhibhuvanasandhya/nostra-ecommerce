@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!--link stylesheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--tailwind link--->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+    " rel="stylesheet">
+</head>
+
+<body>
+
+     <!--disount-->
+     <div class="discount">
+        <p>Sign Up and <b>GET 20% OFF</b> for your first order <i class="fa-solid fa-xmark" id="close"
+                style="cursor: pointer;margin-left: 10px;"></i></p>
+
+    </div>
+
+
+    <!--navbar-->
+    <div class="navbar p-5 flex items-center justify-between shadow-xl sticky top-0 z-10 bg-white">
+        <h1 class="font-extrabold text-3xl">Nostra</h1>
+
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6  md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+
+
+        <div class="navbar__s2 gap-5 cursor-pointer hidden md:flex">
+            <p class="hover:underline"><a href="./index.html">Home</a></p>
+            <p class="hover:underline"><a href="./index.html">New Arrival</a> </p>
+            <p class="hover:underline"><a href="./index.html">Most Wanted</a> </p>
+            <p class="hover:underline"><a href="collection.html">Collections</a> </p>
+            <p class="hover:underline"><a href="./contact.html"> Contact Us</a> </p>
+
+
+        </div>
+    </div>
+
+    <!--sidenavbar-->
+    <section id="sidenav" class="bg-white fixed z-20 top-0 transition-all duration-1000"
+        style="width: 35%;height: 100vh;right:-50%;">
+        <div class="text-right p-5">
+            <p id="close-nav" class="inline cursor-pointer text-3xl font-bold"><i class="fa-solid fa-x"></i></p>
+        </div>
+        <div class="gap-10 text-black flex flex-col items-center cursor-pointer">
+            <p class="hover:underline"><a href="./index.html">Home</a></p>
+            <p class="hover:underline"><a href="./index.html">New Arrival</a> </p>
+            <p class="hover:underline"><a href="./index.html">Most Wanted</a> </p>
+            <p class="hover:underline"><a href="collection.html">Collections</a> </p>
+            <p class="hover:underline"><a href="./contact.html"> Contact Us</a> </p>
+
+
+        </div>
+
+    </section>
+
+    <!--collectios-->
+    <div class="container">
+
+        <div class="divide-section flex m-2">
+            <div class="filter-section  relative text-3xl gap-5">
+               
+                <h3 class="filter-section-occasion mt-3 mb-3 font-bold ">Occasion</h3>
+                <div>
+                    <input type="checkbox" name="tags" value="summer"> Summer <br>
+                    <input type="checkbox" name="tags" value="party"> Party <br>
+                    <input type="checkbox" name="tags" value="beach"> Beach 
+
+                </div>
+               
+                <h3 class="filter-section-colors mt-3 mb-3 font-bold"> Colors </h3>
+                <div>
+                <input type="checkbox" name="tags" value="red"> Red <br>
+                    <input type="checkbox" name="tags" value="blue"> Blue <br>
+                    <input type="checkbox" name="tags" value="white"> White <br>
+                    <input type="checkbox" name="tags" value="green"> Green
+                </div>
+
+                <h3 class="filter-section-arrivals mt-3 mb-3 font-bold"> Arrivals </h3>
+                <div>
+                <input type="checkbox" name="tags" value="new"> New <br>
+                    <input type="checkbox" name="tags" value="old"> Old
+                  
+                </div>
+
+                
+                <hr class="vertical-line ">
+            </div>
+
+            <div class="product-section basis-3 relative p-11">
+                <form class="navbar-search">
+                    <input id="search" type="text" class="border border-black  p-2 m-3" style="width: 100%;" placeholder="search...">
+                    
+                </form>
+
+                <div class="products mt-3 grid grid-cols-2  md:grid-cols-3  gap-4">
+                </div>
+            </div>
+        </div>
+
+
+
+
+    <!--newsletter-->
+
+    <div class="news mt-5 text-xl flex flex-col items-center">
+        <h2>Join our News Letter</h2>
+        <p class="text-center">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <div class="mt-5">
+            <input class="search p-3 mb-5">
+        </div>
+        <div>
+            <button> Subscribe <i class="fa-solid fa-arrow-right"></i> </button>
+        </div>
+    </div>
+
+    </div>
+
+
+    
+    <!--footer-->
+
+    <div class="footer bg-red-300 gap-3 mt-3 p-10">
+        <div class="footer-container flex items-center flex-wrap">
+            <div class="footer-box-1 gap-3 flex flex-col">
+                <h2 class="headingText text-2xl font-bold mt-5">Nostra</h2>
+                <p class="text-2xl mt-3">The Standard chunk of Lorem ipsum
+                    used since the 1500s is reprodused
+                    below for those interest</p>
+                <div class="footer-icon-container mt-3">
+                    <i class="fa-brands fa-instagram mr-10 text-2xl"></i>
+                    <i class="fa-brands fa-twitter mr-10 text-2xl"></i>
+                    <i class="fa-brands fa-facebook mr-10 text-2xl"></i>
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <p class="subtitle mt-8 text-2xl">@ 2023 Nostra.com</p>
+    </div>
+<script type="module" src="collection.js"></script>
+
+</body>
+
+</html>
